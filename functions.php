@@ -11,7 +11,11 @@ function university_files() {
 add_action('wp_enqueue_scripts', 'university_files');
 
 function university_features () {
-  add_theme_support('title-tag');
+  
+  //register_nav_menu( 'headerMenuLocation', 'Header Menu Location'); //Ativa a opção de menu no header
+  //register_nav_menu( 'footerLocationOne', 'Footer Location One'); //Ativa a opção de menu Footer 1
+  //register_nav_menu( 'footerLocationTwo', 'Footer Location Two'); //Ativa a opção de menu Footer 2
+  add_theme_support('title-tag'); //Ativa o titulo na aba do navegador
 }
 
 add_action('after_setup_theme', 'university_features');
